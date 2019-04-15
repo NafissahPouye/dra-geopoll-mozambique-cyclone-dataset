@@ -46,7 +46,7 @@
 <div id="information-on-selected-important-key-variables" class="section level2">
 <h2>Information on selected important (key) variables</h2>
 <ul>
-<li><strong>Categorical key variable(s)</strong>: <em>Country</em> | <em>Age</em> | <em>Gender</em> | <em>ADM1-Mozambique</em> | <em>ADM2-City</em> | <em>HouseholdStatements</em> | <em>SleepingTonight</em> | <em>HouseholdNumber</em></li>
+<li><strong>Categorical key variable(s)</strong>: <em>Gender</em> | <em>HouseholdStatements</em> | <em>adm1</em> | <em>adm2</em></li>
 <li><strong>Continuous key variable(s)</strong>: <em>not defined</em></li>
 <li><strong>Weight variable</strong>: <em>not defined</em></li>
 <li><strong>householdID</strong>: <em>not defined</em></li>
@@ -56,10 +56,10 @@
 <div id="modifications" class="section level2">
 <h2>Modifications</h2>
 <ul>
-<li>Modifications on categorical key variables: <strong>TRUE</strong></li>
+<li>Modifications on categorical key variables: <strong>FALSE</strong></li>
 <li>Modifications on continuous key variables: <strong>NA</strong></li>
 <li>Modifications using PRAM: <strong>FALSE</strong></li>
-<li>Local suppressions: <strong>FALSE</strong></li>
+<li>Local suppressions: <strong>TRUE</strong></li>
 </ul>
 </div>
 <div id="disclosure-risk" class="section level2">
@@ -69,15 +69,15 @@
 <div id="number-of-observations-violating" class="section level4">
 <h4>Number of observations violating</h4>
 <ul>
-<li><strong>2-Anonymity:</strong> 658 (original dataset: 658)</li>
-<li><strong>3-Anonymity:</strong> 688 (original dataset: 688)</li>
+<li><strong>2-Anonymity:</strong> 0 (original dataset: 92)</li>
+<li><strong>3-Anonymity:</strong> 0 (original dataset: 132)</li>
 </ul>
 </div>
 <div id="percentage-of-observations-violating" class="section level4">
 <h4>Percentage of observations violating</h4>
 <ul>
-<li><strong>2-Anonymity:</strong> 95.224% (original dataset: 95.224%)</li>
-<li><strong>3-Anonymity:</strong> 99.566% (original dataset: 99.566%)</li>
+<li><strong>2-Anonymity:</strong> 0.000% (original dataset: 13.314%)</li>
+<li><strong>3-Anonymity:</strong> 0.000% (original dataset: 19.103%)</li>
 </ul>
 </div>
 </div>
@@ -85,22 +85,18 @@
 <h3>Disclosure Risk for Categorical Variables</h3>
 <p>Expected Percentage of Reidentifications:</p>
 <ul>
-<li><strong>modified data</strong>: 97.540% (~ 674.000 observations)</li>
-<li><strong>original data</strong>: 97.540% (~ 674.000 observations)</li>
+<li><strong>modified data</strong>: 2.890% (~ 19.970 observations)</li>
+<li><strong>original data</strong>: 23.878% (~ 165.000 observations)</li>
 </ul>
 <div id="combinations-of-categories-with-highest-risks" class="section level4">
 <h4>10 combinations of categories with highest risks</h4>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Country</th>
-<th align="left">Age</th>
 <th align="left">Gender</th>
-<th align="left">ADM1-Mozambique</th>
-<th align="left">ADM2-City</th>
 <th align="left">HouseholdStatements</th>
-<th align="left">SleepingTonight</th>
-<th align="left">HouseholdNumber</th>
+<th align="left">adm1</th>
+<th align="left">adm2</th>
 <th align="left">risk</th>
 <th align="right">fk</th>
 <th align="right">Fk</th>
@@ -108,134 +104,94 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Mozambique</td>
-<td align="left">18</td>
-<td align="left">Female</td>
-<td align="left">Manica</td>
-<td align="left">Chimoio</td>
-<td align="left">I am displaced from my home</td>
-<td align="left">My home</td>
-<td align="left">8</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">Mozambique</td>
-<td align="left">20</td>
-<td align="left">Female</td>
-<td align="left">Manica</td>
-<td align="left">Chimoio</td>
-<td align="left">I am displaced from my home</td>
-<td align="left">My home</td>
-<td align="left">5</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">Mozambique</td>
-<td align="left">33</td>
 <td align="left">Male</td>
-<td align="left">Zambezia</td>
-<td align="left">Quelimane</td>
-<td align="left">None</td>
-<td align="left">My home</td>
-<td align="left">4</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">Mozambique</td>
-<td align="left">26</td>
-<td align="left">Male</td>
-<td align="left">Zambezia</td>
-<td align="left">Quelimane</td>
-<td align="left">1/more person[s] injured</td>
-<td align="left">Temporary shelter</td>
-<td align="left">5</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">Mozambique</td>
-<td align="left">26</td>
-<td align="left">Male</td>
-<td align="left">Zambezia</td>
-<td align="left">Chinde</td>
-<td align="left">I am displaced from my home</td>
-<td align="left">Community building eg church</td>
-<td align="left">4</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">Mozambique</td>
-<td align="left">28</td>
-<td align="left">Female</td>
-<td align="left">Manica</td>
-<td align="left">Chimoio</td>
-<td align="left">None</td>
-<td align="left">My home</td>
-<td align="left">6</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">Mozambique</td>
-<td align="left">30</td>
-<td align="left">Female</td>
-<td align="left">Manica</td>
-<td align="left">Chimoio</td>
 <td align="left">1/more person[s] missing</td>
-<td align="left">My home</td>
-<td align="left">5</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
+<td align="left">Manica</td>
+<td align="left">NA</td>
+<td align="left">0.091</td>
+<td align="right">11</td>
+<td align="right">11</td>
 </tr>
 <tr class="even">
-<td align="left">Mozambique</td>
-<td align="left">31</td>
 <td align="left">Male</td>
-<td align="left">Sofala</td>
-<td align="left">Beira</td>
 <td align="left">1/more person[s] dead</td>
-<td align="left">Other</td>
-<td align="left">10</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
+<td align="left">Manica</td>
+<td align="left">NA</td>
+<td align="left">0.083</td>
+<td align="right">12</td>
+<td align="right">12</td>
 </tr>
 <tr class="odd">
-<td align="left">Mozambique</td>
-<td align="left">21</td>
 <td align="left">Male</td>
+<td align="left">1/more person[s] dead</td>
 <td align="left">Zambezia</td>
-<td align="left">Quelimane</td>
-<td align="left">I am displaced from my home</td>
-<td align="left">My home</td>
-<td align="left">4</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
+<td align="left">NA</td>
+<td align="left">0.077</td>
+<td align="right">13</td>
+<td align="right">13</td>
 </tr>
 <tr class="even">
-<td align="left">Mozambique</td>
-<td align="left">68</td>
+<td align="left">Male</td>
+<td align="left">1/more person[s] missing</td>
+<td align="left">Imhabane</td>
+<td align="left">NA</td>
+<td align="left">0.077</td>
+<td align="right">13</td>
+<td align="right">13</td>
+</tr>
+<tr class="odd">
 <td align="left">Female</td>
-<td align="left">Sofala</td>
-<td align="left">Beira</td>
-<td align="left">I am displaced from my home</td>
-<td align="left">Community building eg church</td>
-<td align="left">8</td>
-<td align="left">1.000</td>
-<td align="right">1</td>
-<td align="right">1</td>
+<td align="left">1/more person[s] injured</td>
+<td align="left">Manica</td>
+<td align="left">Chimoio</td>
+<td align="left">0.067</td>
+<td align="right">15</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="left">Female</td>
+<td align="left">1/more person[s] injured</td>
+<td align="left">Manica</td>
+<td align="left">NA</td>
+<td align="left">0.067</td>
+<td align="right">15</td>
+<td align="right">15</td>
+</tr>
+<tr class="odd">
+<td align="left">Male</td>
+<td align="left">1/more person[s] injured</td>
+<td align="left">Imhabane</td>
+<td align="left">NA</td>
+<td align="left">0.062</td>
+<td align="right">16</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="left">Female</td>
+<td align="left">1/more person[s] injured</td>
+<td align="left">Zambezia</td>
+<td align="left">NA</td>
+<td align="left">0.056</td>
+<td align="right">18</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="left">Female</td>
+<td align="left">1/more person[s] missing</td>
+<td align="left">Zambezia</td>
+<td align="left">NA</td>
+<td align="left">0.056</td>
+<td align="right">18</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="left">Male</td>
+<td align="left">1/more person[s] missing</td>
+<td align="left">Zambezia</td>
+<td align="left">Quelimane</td>
+<td align="left">0.053</td>
+<td align="right">19</td>
+<td align="right">19</td>
 </tr>
 </tbody>
 </table>
@@ -246,209 +202,6 @@
 <h2>Data Utility</h2>
 <div id="frequencies-categorical-key-variables" class="section level3">
 <h3>Frequencies Categorical Key Variables:</h3>
-<div id="variable-country" class="section level4">
-<h4>Variable: <em>Country</em></h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Categories</th>
-<th align="right">Original data</th>
-<th align="right">Modified data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Mozambique</td>
-<td align="right">691</td>
-<td align="right">691</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="variable-age" class="section level4">
-<h4>Variable: <em>Age</em></h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Categories</th>
-<th align="right">Original data</th>
-<th align="right">Modified data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">18</td>
-<td align="right">45</td>
-<td align="right">45</td>
-</tr>
-<tr class="even">
-<td align="left">19</td>
-<td align="right">57</td>
-<td align="right">57</td>
-</tr>
-<tr class="odd">
-<td align="left">20</td>
-<td align="right">73</td>
-<td align="right">73</td>
-</tr>
-<tr class="even">
-<td align="left">21</td>
-<td align="right">73</td>
-<td align="right">73</td>
-</tr>
-<tr class="odd">
-<td align="left">22</td>
-<td align="right">63</td>
-<td align="right">63</td>
-</tr>
-<tr class="even">
-<td align="left">23</td>
-<td align="right">71</td>
-<td align="right">71</td>
-</tr>
-<tr class="odd">
-<td align="left">24</td>
-<td align="right">55</td>
-<td align="right">55</td>
-</tr>
-<tr class="even">
-<td align="left">25</td>
-<td align="right">32</td>
-<td align="right">32</td>
-</tr>
-<tr class="odd">
-<td align="left">26</td>
-<td align="right">44</td>
-<td align="right">44</td>
-</tr>
-<tr class="even">
-<td align="left">27</td>
-<td align="right">21</td>
-<td align="right">21</td>
-</tr>
-<tr class="odd">
-<td align="left">28</td>
-<td align="right">21</td>
-<td align="right">21</td>
-</tr>
-<tr class="even">
-<td align="left">29</td>
-<td align="right">14</td>
-<td align="right">14</td>
-</tr>
-<tr class="odd">
-<td align="left">30</td>
-<td align="right">17</td>
-<td align="right">17</td>
-</tr>
-<tr class="even">
-<td align="left">31</td>
-<td align="right">17</td>
-<td align="right">17</td>
-</tr>
-<tr class="odd">
-<td align="left">32</td>
-<td align="right">17</td>
-<td align="right">17</td>
-</tr>
-<tr class="even">
-<td align="left">33</td>
-<td align="right">12</td>
-<td align="right">12</td>
-</tr>
-<tr class="odd">
-<td align="left">34</td>
-<td align="right">8</td>
-<td align="right">8</td>
-</tr>
-<tr class="even">
-<td align="left">35</td>
-<td align="right">6</td>
-<td align="right">6</td>
-</tr>
-<tr class="odd">
-<td align="left">36</td>
-<td align="right">6</td>
-<td align="right">6</td>
-</tr>
-<tr class="even">
-<td align="left">37</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="left">38</td>
-<td align="right">10</td>
-<td align="right">10</td>
-</tr>
-<tr class="even">
-<td align="left">39</td>
-<td align="right">3</td>
-<td align="right">3</td>
-</tr>
-<tr class="odd">
-<td align="left">40</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="left">41</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="left">42</td>
-<td align="right">3</td>
-<td align="right">3</td>
-</tr>
-<tr class="even">
-<td align="left">43</td>
-<td align="right">3</td>
-<td align="right">3</td>
-</tr>
-<tr class="odd">
-<td align="left">44</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="left">47</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="left">49</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="left">50</td>
-<td align="right">2</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="left">52</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">58</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">65</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">68</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div id="variable-gender" class="section level4">
 <h4>Variable: <em>Gender</em></h4>
 <table>
@@ -473,8 +226,52 @@
 </tbody>
 </table>
 </div>
-<div id="variable-adm1-mozambique" class="section level4">
-<h4>Variable: <em>ADM1-Mozambique</em></h4>
+<div id="variable-householdstatements" class="section level4">
+<h4>Variable: <em>HouseholdStatements</em></h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Categories</th>
+<th align="right">Original data</th>
+<th align="right">Modified data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1/more person[s] dead</td>
+<td align="right">54</td>
+<td align="right">28</td>
+</tr>
+<tr class="even">
+<td align="left">1/more person[s] injured</td>
+<td align="right">115</td>
+<td align="right">94</td>
+</tr>
+<tr class="odd">
+<td align="left">1/more person[s] missing</td>
+<td align="right">74</td>
+<td align="right">52</td>
+</tr>
+<tr class="even">
+<td align="left">I am displaced from my home</td>
+<td align="right">239</td>
+<td align="right">232</td>
+</tr>
+<tr class="odd">
+<td align="left">None</td>
+<td align="right">209</td>
+<td align="right">193</td>
+</tr>
+<tr class="even">
+<td align="left">NA</td>
+<td align="right">NA</td>
+<td align="right">92</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="variable-adm1" class="section level4">
+<h4>Variable: <em>adm1</em></h4>
 <table>
 <thead>
 <tr class="header">
@@ -507,8 +304,8 @@
 </tbody>
 </table>
 </div>
-<div id="variable-adm2-city" class="section level4">
-<h4>Variable: <em>ADM2-City</em></h4>
+<div id="variable-adm2" class="section level4">
+<h4>Variable: <em>adm2</em></h4>
 <table>
 <thead>
 <tr class="header">
@@ -521,443 +318,272 @@
 <tr class="odd">
 <td align="left">Alto Molocue</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Beira</td>
 <td align="right">185</td>
-<td align="right">185</td>
+<td align="right">174</td>
 </tr>
 <tr class="odd">
 <td align="left">Boane</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Buzi</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Caia</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Cheringoma</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Chimoio</td>
 <td align="right">167</td>
-<td align="right">167</td>
+<td align="right">165</td>
 </tr>
 <tr class="even">
 <td align="left">Chinde</td>
 <td align="right">5</td>
-<td align="right">5</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Dondo</td>
 <td align="right">12</td>
-<td align="right">12</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Gondola</td>
 <td align="right">10</td>
-<td align="right">10</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Govuro</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Gurúè</td>
 <td align="right">3</td>
-<td align="right">3</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Inchope</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Inhambane</td>
 <td align="right">28</td>
-<td align="right">28</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Inhaminga</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Inharrime</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Inhassoro</td>
 <td align="right">3</td>
-<td align="right">3</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Invalid</td>
 <td align="right">6</td>
-<td align="right">6</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Luabo</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Lugela</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Mafambisse</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Maganja Da Costa</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Manica</td>
 <td align="right">23</td>
-<td align="right">23</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Maputo</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Marromeu</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Massinga</td>
 <td align="right">10</td>
-<td align="right">10</td>
+<td align="right">1</td>
 </tr>
 <tr class="odd">
 <td align="left">Matola</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Maxixe</td>
 <td align="right">18</td>
-<td align="right">18</td>
+<td align="right">8</td>
 </tr>
 <tr class="odd">
 <td align="left">Milange</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Mocuba</td>
 <td align="right">18</td>
-<td align="right">18</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Molocue</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Mopeia</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Morrumbene</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Mulombo</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Munhava</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Namacurra</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Nampula</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Nhamatanda</td>
 <td align="right">10</td>
-<td align="right">10</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Nicoadala</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Quelimane</td>
 <td align="right">126</td>
-<td align="right">126</td>
+<td align="right">125</td>
 </tr>
 <tr class="odd">
 <td align="left">Sofala</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Sussundenga</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Tete</td>
 <td align="right">2</td>
-<td align="right">2</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Vilankulo</td>
 <td align="right">13</td>
-<td align="right">13</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Xai-Xai</td>
 <td align="right">1</td>
-<td align="right">1</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Zambezia</td>
 <td align="right">15</td>
-<td align="right">15</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">NA</td>
+<td align="right">NA</td>
+<td align="right">218</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="variable-householdstatements" class="section level4">
-<h4>Variable: <em>HouseholdStatements</em></h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Categories</th>
-<th align="right">Original data</th>
-<th align="right">Modified data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1/more person[s] dead</td>
-<td align="right">54</td>
-<td align="right">54</td>
-</tr>
-<tr class="even">
-<td align="left">1/more person[s] injured</td>
-<td align="right">115</td>
-<td align="right">115</td>
-</tr>
-<tr class="odd">
-<td align="left">1/more person[s] missing</td>
-<td align="right">74</td>
-<td align="right">74</td>
-</tr>
-<tr class="even">
-<td align="left">I am displaced from my home</td>
-<td align="right">239</td>
-<td align="right">239</td>
-</tr>
-<tr class="odd">
-<td align="left">None</td>
-<td align="right">209</td>
-<td align="right">209</td>
-</tr>
-</tbody>
-</table>
 </div>
-<div id="variable-sleepingtonight" class="section level4">
-<h4>Variable: <em>SleepingTonight</em></h4>
+<div id="local-suppressions" class="section level3">
+<h3>Local Suppressions</h3>
+<p>The table below shows for each categorical key variable the number (1st row) and the percentages (2nd row) of suppressed cells.</p>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Categories</th>
-<th align="right">Original data</th>
-<th align="right">Modified data</th>
+<th></th>
+<th align="left">Gender</th>
+<th align="left">HouseholdStatements</th>
+<th align="left">adm1</th>
+<th align="left">adm2</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Community building eg church</td>
-<td align="right">67</td>
-<td align="right">67</td>
-</tr>
-<tr class="even">
-<td align="left">Don’t know</td>
-<td align="right">36</td>
-<td align="right">36</td>
-</tr>
-<tr class="odd">
-<td align="left">My home</td>
-<td align="right">277</td>
-<td align="right">277</td>
-</tr>
-<tr class="even">
-<td align="left">On the street</td>
-<td align="right">12</td>
-<td align="right">12</td>
-</tr>
-<tr class="odd">
-<td align="left">Other</td>
-<td align="right">21</td>
-<td align="right">21</td>
-</tr>
-<tr class="even">
-<td align="left">Temporary shelter</td>
-<td align="right">107</td>
-<td align="right">107</td>
-</tr>
-<tr class="odd">
-<td align="left">With friends/family</td>
-<td align="right">171</td>
-<td align="right">171</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="variable-householdnumber" class="section level4">
-<h4>Variable: <em>HouseholdNumber</em></h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Categories</th>
-<th align="right">Original data</th>
-<th align="right">Modified data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<td>Number of Suppression</td>
 <td align="left">0</td>
-<td align="right">1</td>
-<td align="right">1</td>
+<td align="left">92</td>
+<td align="left">0</td>
+<td align="left">218</td>
 </tr>
 <tr class="even">
-<td align="left">1</td>
-<td align="right">9</td>
-<td align="right">9</td>
-</tr>
-<tr class="odd">
-<td align="left">10</td>
-<td align="right">37</td>
-<td align="right">37</td>
-</tr>
-<tr class="even">
-<td align="left">11</td>
-<td align="right">16</td>
-<td align="right">16</td>
-</tr>
-<tr class="odd">
-<td align="left">12</td>
-<td align="right">18</td>
-<td align="right">18</td>
-</tr>
-<tr class="even">
-<td align="left">14</td>
-<td align="right">5</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="left">15</td>
-<td align="right">5</td>
-<td align="right">5</td>
-</tr>
-<tr class="even">
-<td align="left">16</td>
-<td align="right">3</td>
-<td align="right">3</td>
-</tr>
-<tr class="odd">
-<td align="left">17</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">19</td>
-<td align="right">3</td>
-<td align="right">3</td>
-</tr>
-<tr class="odd">
-<td align="left">2</td>
-<td align="right">17</td>
-<td align="right">17</td>
-</tr>
-<tr class="even">
-<td align="left">3</td>
-<td align="right">23</td>
-<td align="right">23</td>
-</tr>
-<tr class="odd">
-<td align="left">30</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="right">76</td>
-<td align="right">76</td>
-</tr>
-<tr class="odd">
-<td align="left">40</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">5</td>
-<td align="right">102</td>
-<td align="right">102</td>
-</tr>
-<tr class="odd">
-<td align="left">50</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="right">120</td>
-<td align="right">120</td>
-</tr>
-<tr class="odd">
-<td align="left">7</td>
-<td align="right">119</td>
-<td align="right">119</td>
-</tr>
-<tr class="even">
-<td align="left">8</td>
-<td align="right">85</td>
-<td align="right">85</td>
-</tr>
-<tr class="odd">
-<td align="left">9</td>
-<td align="right">48</td>
-<td align="right">48</td>
+<td>Percentage</td>
+<td align="left">0.000</td>
+<td align="left">13.314</td>
+<td align="left">0.000</td>
+<td align="left">31.548</td>
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 </div>
 <div id="r-code" class="section level2">
@@ -968,7 +594,7 @@
 <div id="about-the-r-version" class="section level3">
 <h3>About the R-Version</h3>
 <ul>
-<li><strong>Version</strong>: R version 3.5.0 (2018-04-23)</li>
+<li><strong>Version</strong>: R version 3.5.3 (2019-03-11)</li>
 <li><strong>Platform</strong>: x86_64-w64-mingw32</li>
 </ul>
 </div>
@@ -982,11 +608,11 @@
 </div>
 <div id="other-attached-packages" class="section level3">
 <h3>Other attached packages</h3>
-<p><em>forcats (0.3.0)</em> | <em>stringr (1.3.1)</em> | <em>dplyr (0.7.6)</em> | <em>purrr (0.2.5)</em> | <em>readr (1.1.1)</em> | <em>tidyr (0.8.1)</em> | <em>tibble (1.4.2)</em> | <em>ggplot2 (3.0.0)</em> | <em>tidyverse (1.2.1)</em> | <em>sdcMicro (5.3.0)</em> | <em>readxl (1.1.0)</em></p>
+<p><em>forcats (0.3.0)</em> | <em>stringr (1.3.1)</em> | <em>dplyr (0.7.6)</em> | <em>purrr (0.2.5)</em> | <em>readr (1.1.1)</em> | <em>tidyr (0.8.1)</em> | <em>tibble (1.4.2)</em> | <em>ggplot2 (3.1.1)</em> | <em>tidyverse (1.2.1)</em> | <em>sdcMicro (5.3.0)</em> | <em>readxl (1.1.0)</em></p>
 </div>
 <div id="packages-loaded-via-namespace-but-not-attached" class="section level3">
 <h3>Packages loaded via Namespace (but not attached)</h3>
-<p><em>httr (1.3.1)</em> | <em>jsonlite (1.5)</em> | <em>prettydoc (0.2.1)</em> | <em>carData (3.0-1)</em> | <em>modelr (0.1.2)</em> | <em>shiny (1.1.0)</em> | <em>assertthat (0.2.0)</em> | <em>rhandsontable (0.3.6)</em> | <em>highr (0.7)</em> | <em>sp (1.3-1)</em> | <em>cellranger (1.1.0)</em> | <em>yaml (2.1.19)</em> | <em>robustbase (0.93-1)</em> | <em>pillar (1.2.3)</em> | <em>backports (1.1.2)</em> | <em>VIM (4.7.0)</em> | <em>lattice (0.20-35)</em> | <em>glue (1.2.0)</em> | <em>digest (0.6.15)</em> | <em>promises (1.0.1)</em> | <em>rvest (0.3.2)</em> | <em>colorspace (1.3-2)</em> | <em>htmltools (0.3.6)</em> | <em>httpuv (1.4.4.1)</em> | <em>plyr (1.8.4)</em> | <em>psych (1.8.4)</em> | <em>pkgconfig (2.0.1)</em> | <em>broom (0.4.5)</em> | <em>haven (1.1.2)</em> | <em>xtable (1.8-2)</em> | <em>scales (0.5.0)</em> | <em>openxlsx (4.1.0)</em> | <em>later (0.7.3)</em> | <em>rio (0.5.10)</em> | <em>car (3.0-0)</em> | <em>DT (0.4)</em> | <em>withr (2.1.2)</em> | <em>nnet (7.3-12)</em> | <em>lazyeval (0.2.1)</em> | <em>cli (1.0.0)</em> | <em>mnormt (1.5-5)</em> | <em>crayon (1.3.4)</em> | <em>magrittr (1.5)</em> | <em>mime (0.5)</em> | <em>evaluate (0.10.1)</em> | <em>laeken (0.4.6)</em> | <em>nlme (3.1-137)</em> | <em>MASS (7.3-49)</em> | <em>xml2 (1.2.0)</em> | <em>foreign (0.8-70)</em> | <em>class (7.3-14)</em> | <em>tools (3.5.0)</em> | <em>data.table (1.11.4)</em> | <em>hms (0.4.2)</em> | <em>munsell (0.5.0)</em> | <em>cluster (2.0.7-1)</em> | <em>zip (1.0.0)</em> | <em>bindrcpp (0.2.2)</em> | <em>compiler (3.5.0)</em> | <em>e1071 (1.6-8)</em> | <em>vcd (1.4-4)</em> | <em>rlang (0.2.1)</em> | <em>grid (3.5.0)</em> | <em>rstudioapi (0.7)</em> | <em>htmlwidgets (1.2)</em> | <em>shinyBS (0.61)</em> | <em>rmarkdown (1.10)</em> | <em>boot (1.3-20)</em> | <em>gtable (0.2.0)</em> | <em>abind (1.4-5)</em> | <em>sets (1.0-18)</em> | <em>curl (3.2)</em> | <em>reshape2 (1.4.3)</em> | <em>R6 (2.2.2)</em> | <em>lubridate (1.7.4)</em> | <em>zoo (1.8-2)</em> | <em>knitr (1.20)</em> | <em>bindr (0.1.1)</em> | <em>rprojroot (1.3-2)</em> | <em>stringi (1.1.7)</em> | <em>parallel (3.5.0)</em> | <em>Rcpp (0.12.17)</em> | <em>DEoptimR (1.0-8)</em> | <em>tidyselect (0.2.4)</em> | <em>lmtest (0.9-36)</em></p>
+<p><em>httr (1.3.1)</em> | <em>jsonlite (1.5)</em> | <em>prettydoc (0.2.1)</em> | <em>carData (3.0-1)</em> | <em>modelr (0.1.2)</em> | <em>shiny (1.1.0)</em> | <em>assertthat (0.2.0)</em> | <em>rhandsontable (0.3.6)</em> | <em>highr (0.7)</em> | <em>sp (1.3-1)</em> | <em>cellranger (1.1.0)</em> | <em>yaml (2.1.19)</em> | <em>robustbase (0.93-1)</em> | <em>pillar (1.2.3)</em> | <em>backports (1.1.2)</em> | <em>VIM (4.7.0)</em> | <em>lattice (0.20-38)</em> | <em>glue (1.2.0)</em> | <em>digest (0.6.15)</em> | <em>promises (1.0.1)</em> | <em>rvest (0.3.2)</em> | <em>colorspace (1.3-2)</em> | <em>htmltools (0.3.6)</em> | <em>httpuv (1.4.4.1)</em> | <em>plyr (1.8.4)</em> | <em>psych (1.8.4)</em> | <em>pkgconfig (2.0.1)</em> | <em>broom (0.4.5)</em> | <em>haven (1.1.2)</em> | <em>xtable (1.8-2)</em> | <em>scales (1.0.0)</em> | <em>openxlsx (4.1.0)</em> | <em>later (0.7.3)</em> | <em>rio (0.5.10)</em> | <em>car (3.0-0)</em> | <em>DT (0.4)</em> | <em>withr (2.1.2)</em> | <em>nnet (7.3-12)</em> | <em>lazyeval (0.2.1)</em> | <em>cli (1.0.0)</em> | <em>mnormt (1.5-5)</em> | <em>crayon (1.3.4)</em> | <em>magrittr (1.5)</em> | <em>mime (0.5)</em> | <em>evaluate (0.10.1)</em> | <em>laeken (0.4.6)</em> | <em>nlme (3.1-137)</em> | <em>MASS (7.3-51.1)</em> | <em>xml2 (1.2.0)</em> | <em>foreign (0.8-71)</em> | <em>class (7.3-15)</em> | <em>tools (3.5.3)</em> | <em>data.table (1.11.4)</em> | <em>hms (0.4.2)</em> | <em>munsell (0.5.0)</em> | <em>cluster (2.0.7-1)</em> | <em>zip (1.0.0)</em> | <em>bindrcpp (0.2.2)</em> | <em>compiler (3.5.3)</em> | <em>e1071 (1.6-8)</em> | <em>vcd (1.4-4)</em> | <em>rlang (0.2.1)</em> | <em>grid (3.5.3)</em> | <em>rstudioapi (0.7)</em> | <em>htmlwidgets (1.2)</em> | <em>shinyBS (0.61)</em> | <em>rmarkdown (1.10)</em> | <em>boot (1.3-20)</em> | <em>gtable (0.2.0)</em> | <em>abind (1.4-5)</em> | <em>sets (1.0-18)</em> | <em>curl (3.2)</em> | <em>reshape2 (1.4.3)</em> | <em>R6 (2.2.2)</em> | <em>lubridate (1.7.4)</em> | <em>zoo (1.8-5)</em> | <em>knitr (1.20)</em> | <em>bindr (0.1.1)</em> | <em>rprojroot (1.3-2)</em> | <em>stringi (1.1.7)</em> | <em>parallel (3.5.3)</em> | <em>Rcpp (0.12.17)</em> | <em>DEoptimR (1.0-8)</em> | <em>tidyselect (0.2.4)</em> | <em>lmtest (0.9-36)</em></p>
 </div>
 </div>
 <div id="disclaimer" class="section level1">
@@ -997,7 +623,7 @@
 <li><a href="https://github.com/alexkowa/sdcMicro/issues"><strong>Issue-Tracker for sdcMicro</strong></a></li>
 </ul>
 <hr />
-<p>This report was generated on mer., 03/04/2019 at 18:53:49.</p>
+<p>This report was generated on lun., 15/04/2019 at 15:47:04.</p>
 </div>
     </section>
   </div>
